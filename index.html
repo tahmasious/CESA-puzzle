@@ -61,7 +61,7 @@
 <body>
     <div class="container">
         <h1>Find the Pattern !</h1>
-        <p id="next-level" style="display: none; text-align: center;"><a href="#">Well done! click for the next level</a></p>
+        <p id="next-level" style="display: none; text-align: center;font-size: 2.8rem;"><a href="https://tahmasious.github.io/CESA-puzzle/6.png">Well done! click for the next level</a></p>
         <svg class="patternlock" id="lock" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <g class="lock-actives"></g>
             <g class="lock-lines"></g>
@@ -95,7 +95,6 @@
     var p = new PatternLock(e, {
         onPattern: function(pattern) {
             if (pattern == 78635412){
-                window.location.replace("https://tahmasious.github.io/CESA-puzzle/6.png")
                 this.success()
                 var nextlink = document.getElementById('next-level');
                 nextlink.style.display = 'block';
